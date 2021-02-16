@@ -132,6 +132,10 @@ Recursion is avoided by using a parsing table and a stack.
 [Detailed algorithm for creating parsing table.](https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node13.html)
 {% endhint %}
 
+{% hint style="info" %}
+[LL1 Parser visualizer](https://www.cs.princeton.edu/courses/archive/spring20/cos320/LL1/)
+{% endhint %}
+
 #### Example
 
 > **Grammar**  
