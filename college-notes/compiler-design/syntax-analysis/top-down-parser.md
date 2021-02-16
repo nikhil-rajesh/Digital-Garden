@@ -220,8 +220,11 @@ if S is the Start Symbol and $ is the right end marker:
     add $ to Follow(S)
 if A → α B β
     add First(β) to Follow(B)
-if ( A → α B ) or ( A → α B β where First(β) contains ε )
-    add Follow(A) to Follow(B)
+    
+repeat
+    if ( A → α B ) or ( A → α B β where First(β) contains ε )
+        add Follow(A) to Follow(B)
+until(no changes to Follow())
 ```
 
 
