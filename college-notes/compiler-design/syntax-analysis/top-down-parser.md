@@ -133,7 +133,7 @@ match(token) {
 Recursion is avoided by using a parsing table and a stack. 
 
 {% hint style="info" %}
-Detailed algorithm for creating parsing table. [https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node13.html](https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node13.html)
+[Detailed algorithm for creating parsing table.](https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node13.html)
 {% endhint %}
 
 #### Example
