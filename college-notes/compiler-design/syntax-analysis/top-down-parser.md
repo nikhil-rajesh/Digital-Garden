@@ -154,7 +154,7 @@ main() {
         if X in TERM or X == $ :
             if X == token:
                 input_pointer++;
-            else if X == $:
+            else if X == $ and token === $:
                 break;
             else:
                 error();
