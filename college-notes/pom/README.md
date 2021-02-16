@@ -4,7 +4,7 @@ description: S6 Course
 
 # Principles of Management
 
-### What is management?
+## What is management?
 
 * Management is a process of designing and maintaining an environment in which individuals working together in groups, efficiently accomplish selected aims.
 * Management is the process of achieving goals and objectives effectively and efficiently through and with the people.
@@ -16,14 +16,14 @@ Carry out managerial functions of planning, organizing, staffing, leading and co
 **Aim of Manager**  
 To create a surplus.
 
-#### Organization
+### Organization
 
 A group of people working together to create a surplus.
 
 * Profit making/ buisness org.
 * Non Profit/ Service org.
 
-#### Productivity
+### Productivity
 
 * The output-input ratio within a time period with due consideration of quality.
 * Is a function of effectiveness and efficiency.

@@ -33,7 +33,7 @@ Work of all kinds must be divided & subdivided and allotted to various persons a
 * A sub-ordinate should receive orders and be accountable to one and only one boss at a time
 * He should not receive instructions from more than one person
 
-### Unity of Direction 
+### Unity of Direction
 
 * People engaged in the same kind of business or same kind of activities must have the same objectives in a single plan.
 * Without unity of direction, unity of action cannot be achieved.
@@ -94,8 +94,4 @@ Bureaucratic organisation approaches can be described as an organisation strivin
 * A clear hierarchy of authority.
 * Formal rules and procedures that are impartially and universally applied to guide staff behaviour and performance.
 * Employee selection and promotion based on merit.
-
-
-
-
 

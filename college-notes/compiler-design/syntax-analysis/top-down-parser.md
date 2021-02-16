@@ -24,47 +24,45 @@ F  → ( E )  | id
 
 #### Example Code
 
-{% hint style="info" %}
-**Grammar**  
-E → i E'  
-E' → + i E' \| ε
-{% endhint %}
+> **Grammar**  
+> E → i E'  
+> E' → + i E' \| ε
 
 ```c
 int main() { 
-	// E is a start symbol. 
-	E(); 
+    // E is a start symbol. 
+    E(); 
 
-	// if lookahead = $, it represents the end of the string 
-	// Here l is lookahead. 
-	if (l == '$') 
-		printf("Parsing Successful"); 
+    // if lookahead = $, it represents the end of the string 
+    // Here l is lookahead. 
+    if (l == '$') 
+        printf("Parsing Successful"); 
 } 
 
 // Definition of E, as per the given production 
 E() { 
-	if (l == 'i') { 
-		match('i'); 
-		E'(); 
-	} 
+    if (l == 'i') { 
+        match('i'); 
+        E'(); 
+    } 
 } 
 
 // Definition of E' as per the given production 
 E'() { 
-	if (l == '+') { 
-		match('+'); 
-		match('i'); 
-		E'(); 
-	}
+    if (l == '+') { 
+        match('+'); 
+        match('i'); 
+        E'(); 
+    }
 } 
 
 // Match function 
 match(char t) { 
-	if (l == t) { 
-		l = getchar(); 
-	} else
-		printf("Error"); 
-} 
+    if (l == t) { 
+        l = getchar(); 
+    } else
+        printf("Error"); 
+}
 ```
 
 ### Back-Tracking
@@ -90,11 +88,9 @@ This parsing will only work if, for all productions with same L.H.S start with a
 It is recursive descent parsing without back-tracking. To achieve this we are using a lookahead.  
 When expanding the non-terminal, pass the next character in input. Expand the non-terminal starting with that character. If not present, Syntax Error.
 
-{% hint style="info" %}
-**Grammar**  
-S → cAd   
-A → a
-{% endhint %}
+> **Grammar**  
+> S → cAd  
+> A → a
 
 ```c
 S() {
@@ -130,7 +126,7 @@ match(token) {
 
 ### Non-Recursive Predictive Parsing - LL\(1\)
 
-Recursion is avoided by using a parsing table and a stack. 
+Recursion is avoided by using a parsing table and a stack.
 
 {% hint style="info" %}
 [Detailed algorithm for creating parsing table.](https://www.csd.uwo.ca/~mmorenom/CS447/Lectures/Syntax.html/node13.html)
@@ -138,11 +134,9 @@ Recursion is avoided by using a parsing table and a stack.
 
 #### Example
 
-{% hint style="info" %}
-**Grammar**  
-S → cAd   
-A → a
-{% endhint %}
+> **Grammar**  
+> S → cAd  
+> A → a
 
 ```c
 // TERM - Array of terminals
@@ -179,4 +173,56 @@ error() {
     exit();
 }
 ```
+
+#### Construction of Parsing Table
+
+```c
+// M - Parsing Table
+
+for each production A→α 
+    for each terminal 'a' in First(α)
+        M[A, a] = A→α
+    if ε in First(α)
+        for each terminal 'b' in Follow(A)
+            M[A, b] = A→α
+    for each terminal 'a'
+        if M[A, a] == undefined
+            M[A,a] = error
+```
+
+#### Computing of First\(X\)
+
+> If α is any string of grammar symbols, then First\(α\) is the set of terminals that is the start symbols in string derived from α. If α →ε, ε is also in First\(α\).
+
+```c
+if X is a terminal
+    First(X) = X
+else 
+    if X→ε is a production
+        add ε to First(X) 
+    else
+        First(X) = undefined
+if X→Y1 Y2 ... Yk is a production
+    for i in 1...k
+        First(X) = First(Yi) U First(X)
+        if ε not in First(Yi) 
+            break
+```
+
+#### Computing of Follow\(X\)
+
+> For a non-terminal A, Follow\(A\) is the set of terminal 'a' that can appear immediately to the right of A in some sentence.
+>
+> If A is the rightmost symbol in some sentential form, then $ is in Follow\(A\)
+
+```c
+if S is the Start Symbol and $ is the right end marker:
+    add $ to Follow(S)
+if A → α B β
+    add First(β) to Follow(B)
+if ( A → α B ) or ( A → α B β where First(β) contains ε )
+    add Follow(A) to Follow(B)
+```
+
+
 
