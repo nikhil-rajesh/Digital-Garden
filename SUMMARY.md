@@ -17,4 +17,6 @@
   * [Management: Science or Art?](college-notes/pom/management-science-or-art.md)
   * [Evolution of Modern Management](college-notes/pom/evolution-of-modern-management.md)
   * [Classical Theory](college-notes/pom/classical-management.md)
+* [Software Engineering](college-notes/software-engineering/README.md)
+  * [Java](college-notes/software-engineering/java.md)
 
