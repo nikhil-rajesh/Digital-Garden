@@ -2,6 +2,10 @@
 
 ## LR\(0\)
 
+{% hint style="info" %}
+Grammar without Shift-Reduce Conflict
+{% endhint %}
+
 \(0\) means no lookahead.
 
 Shift input symbol to stack  
@@ -22,6 +26,10 @@ Will have problems if wrong prodcution is reduced \(Multiple production for same
 ![](../../../.gitbook/assets/screenshot_20210217_121657.png)
 
 ## SLR
+
+{% hint style="info" %}
+Grammar Without Reduce-Reduce Conflict, but can have Shift-Reduce Conflict
+{% endhint %}
 
 > **Grammar**  
 > S → E$  
@@ -46,9 +54,11 @@ Otherwise Shift.
 
 Reduce if next symbol in input is in Follow\(E\), otherwise shift.
 
-
-
 ## LR\(1\)
+
+{% hint style="info" %}
+Grammar can have both Shift-Reduce and Reduce-Reduce Conflicts
+{% endhint %}
 
 
 
