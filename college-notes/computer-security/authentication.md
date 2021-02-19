@@ -38,10 +38,10 @@ C ------> S    R; after decrypting
 ```
 
 {% hint style="info" %}
-• Nonces are random and non-recurring  
-• Freshness of nonce thwarts replay attack  
-• Size of nonce is large, 256 bits  
-• Sender and receiver do not keep track of the nonces generated or received
+* Nonces are random and non-recurring
+* Freshness of nonce thwarts replay attack
+* Size of nonce is large, 256 bits
+* Sender and receiver do not keep track of the nonces generated or received
 {% endhint %}
 
 ### Certificate Based Authentication
