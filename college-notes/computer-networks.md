@@ -1,5 +1,7 @@
 # Computer Networks
 
+## Crossover and Straight Through Cables
+
 Use straight through cable for the following cabling:
 
 * Switch to router

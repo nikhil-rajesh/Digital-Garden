@@ -20,4 +20,6 @@
 * [Software Engineering](college-notes/software-engineering/README.md)
   * [Java](college-notes/software-engineering/java.md)
 * [Computer Networks](college-notes/computer-networks.md)
+* [Computer Security](college-notes/computer-security/README.md)
+  * [Authentication](college-notes/computer-security/authentication.md)
 
