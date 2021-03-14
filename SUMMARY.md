@@ -10,6 +10,7 @@
   * [Syntax Analysis](college-notes/compiler-design/syntax-analysis/README.md)
     * [Top-Down Parser](college-notes/compiler-design/syntax-analysis/top-down-parser.md)
     * [Bottom-Up Parser](college-notes/compiler-design/syntax-analysis/bottom-up-parser.md)
+  * [Syntax Directed Translation](college-notes/compiler-design/syntax-directed-translation.md)
 * [Principles of Management](college-notes/pom/README.md)
   * [Levels of Management](college-notes/pom/levels.md)
   * [Managerial Skills \(Robert L Katz\)](college-notes/pom/managerial-skills-robert-l-katz.md)
@@ -19,7 +20,8 @@
   * [Classical Theory](college-notes/pom/classical-management.md)
 * [Software Engineering](college-notes/software-engineering/README.md)
   * [Java](college-notes/software-engineering/java.md)
-* [Computer Networks](college-notes/computer-networks.md)
+* [Computer Networks](college-notes/computer-networks/README.md)
+  * [Data Link Layer](college-notes/computer-networks/data-link-layer.md)
 * [Computer Security](college-notes/computer-security/README.md)
   * [Authentication](college-notes/computer-security/authentication.md)
 
