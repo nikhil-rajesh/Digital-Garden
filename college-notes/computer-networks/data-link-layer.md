@@ -31,7 +31,7 @@ WAN BER is low, but have to pass to other layers. In LAN its just forwarding, so
 
 * [Framing](data-link-layer.md#framing)
   * Identify boundaries of frames
-* Addressing
+* [Addressing](data-link-layer.md#addressing-link-layer-address)
   * MAC addressing
 * Error Control
   * Check if frame is corrupted before passing to Network Layer
@@ -49,4 +49,13 @@ WAN BER is low, but have to pass to other layers. In LAN its just forwarding, so
   * Specify a start symbol and end symbol at the start and end of frame. Problem occurs if data contains the start symbol or end symbol. Can be solved by having a delimited before using the start symbol in data. 
 * **Bit Stuffing**
   * Before start of frame add flag \(01111110\). If 5 consecutive 1's appear in data add 0 after that, to prevent flag appearing in the data. 
+
+### Addressing \(Link Layer Address\)
+
+Called as **MAC/Physical Address.**  
+Size is **48 bits.**  
+First 24 bits - **Organization Unique Identifier** \(Assigned by IEEE to company\)  
+Last 24 bits - **Organization Assigned Portion** \(Company assign to device\)  
+1st bit 0 - **Unicast**  
+1st bit 1 - **Multicast**
 
