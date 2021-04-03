@@ -11,6 +11,7 @@
     * [Top-Down Parser](college-notes/compiler-design/syntax-analysis/top-down-parser.md)
     * [Bottom-Up Parser](college-notes/compiler-design/syntax-analysis/bottom-up-parser.md)
   * [Syntax Directed Translation](college-notes/compiler-design/syntax-directed-translation.md)
+  * [Untitled](college-notes/compiler-design/untitled.md)
 * [Principles of Management](college-notes/pom/README.md)
   * [Levels of Management](college-notes/pom/levels.md)
   * [Managerial Skills \(Robert L Katz\)](college-notes/pom/managerial-skills-robert-l-katz.md)
