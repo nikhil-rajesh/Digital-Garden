@@ -33,7 +33,7 @@ WAN BER is low, but have to pass to other layers. In LAN its just forwarding, so
   * Identify boundaries of frames
 * [Addressing](data-link-layer.md#addressing-link-layer-address)
   * MAC addressing
-* Error Control
+* [Error Control](data-link-layer.md#error-control)
   * Check if frame is corrupted before passing to Network Layer
 * Flow Control
   * Techniques used to control data flow when there is bandwidth differnece between sender and receiver
@@ -58,4 +58,24 @@ First 24 bits - **Organization Unique Identifier** \(Assigned by IEEE to company
 Last 24 bits - **Organization Assigned Portion** \(Company assign to device\)  
 1st bit 0 - **Unicast**  
 1st bit 1 - **Multicast**
+
+### **Error Control**
+
+* **Error Detection**
+  * **Cyclic Redundancy Check\(CRC\) or Polynomial Code**
+    * **Hardware Implementation \(faster\)**
+    * **Implemented in Data Link Layer**
+  * **Checksum**
+    * **Software Implementaion**
+    * **Implemented in Transport Layer**
+* **Error Correction**
+  * **Hamming Code** 
+
+### **Cyclic Redundancy check**
+
+Add additional data \(Frame check sequence\) to the transmitted data. Addtional data is the remainder when transmitted data is divided by \(XOR\) using a generator \(divisor polynomial\). 
+
+Additional data size = degree of generator polynomial
+
+#### \*\*\*\*
 
