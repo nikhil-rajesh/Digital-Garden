@@ -73,7 +73,19 @@ Lecture 3 and 4
     * **Software Implementaion**
     * **Implemented in Transport Layer**
 * **Error Correction**
-  * **Hamming Code** 
+  * **Hamming Code**
+
+### **Hamming Code Equation**
+
+{% hint style="info" %}
+m = number of data bits  
+r = number of check bits \(redundant bits\)  
+n = m + r = total size
+{% endhint %}
+
+$$
+m + r + 1 \leq 2^r
+$$
 
 ### **Cyclic Redundancy check**
 
@@ -109,9 +121,24 @@ Send multiple frames and move the window whenever an ack is received. If failed 
   * 2 Channels are there for transmission
     * One for sending data to receiver \(Data Channel\)
     * One for receiving Acknowledgement \(Control Channel\)
-    * Sending data througn control channel is called as **Piggybacking**
+    * Sending data througn control channel is called as **Piggybacking,** since ack packet is only some bits, we can use the control channel to send data too, and its more efficient \(no bandwidth lose\)
 {% endtab %}
 {% endtabs %}
 
-#### \*\*\*\*
+{% hint style="info" %}
+Lecture 6
+{% endhint %}
+
+### Error Correction
+
+* **Forward Error Correction**
+  * Error is corrected in Receiver itself.
+  * Eg: Hamming Code
+* **Backward Error Correction**
+  * Inform sender that error is occured, sender will resend the packet.
+  * Known as ARQ \(Automatic Repeat Request\)
+  * 3 types
+    * 
+
+###  
 
