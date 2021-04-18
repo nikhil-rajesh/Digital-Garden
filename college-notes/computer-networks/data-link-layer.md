@@ -59,6 +59,10 @@ Last 24 bits - **Organization Assigned Portion** \(Company assign to device\)
 1st bit 0 - **Unicast**  
 1st bit 1 - **Multicast**
 
+{% hint style="info" %}
+Lecture 3 and 4
+{% endhint %}
+
 ### **Error Control**
 
 * **Error Detection**
@@ -76,6 +80,38 @@ Last 24 bits - **Organization Assigned Portion** \(Company assign to device\)
 Add additional data \(Frame check sequence\) to the transmitted data. Addtional data is the remainder when transmitted data is divided by \(XOR\) using a generator \(divisor polynomial\). 
 
 Additional data size = degree of generator polynomial
+
+{% hint style="info" %}
+Lecture 5
+{% endhint %}
+
+### Flow Control
+
+{% tabs %}
+{% tab title="Stop & Wait" %}
+Send one frame and wait till we get ack, not used nowadays because this is a waste of bandwidth. If failed to receive ack after certain amount of time, resend the frame.
+
+Good for noiseless channel.
+{% endtab %}
+
+{% tab title="Sliding Window" %}
+Send multiple frames and move the window whenever an ack is received. If failed to receive ack after certain amount of time, resend the frame.
+
+#### Ethernet
+
+* Half Duplex
+  * Using backoff mechanism 
+* Full Duplex
+  * Flow control is optional
+  * Uses auto negotiation
+  * There is a **PAUSE Frame**
+    * Pause Time header, 100ms means sender needs to wait for 100ms before next transfer. If its 0, sender can send immediately
+  * 2 Channels are there for transmission
+    * One for sending data to receiver \(Data Channel\)
+    * One for receiving Acknowledgement \(Control Channel\)
+    * Sending data througn control channel is called as **Piggybacking**
+{% endtab %}
+{% endtabs %}
 
 #### \*\*\*\*
 
