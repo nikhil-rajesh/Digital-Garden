@@ -161,11 +161,7 @@ $$
 S.W.S = 2^k /2\\R.W.S = 2^k/2
 $$
 
-[Why this formula?](https://stackoverflow.com/questions/3999065/why-is-window-size-less-than-or-equal-to-half-the-sequence-number-in-sr-protocol)
+[Why this formula?](https://stackoverflow.com/questions/3999065/why-is-window-size-less-than-or-equal-to-half-the-sequence-number-in-sr-protocol)  
 {% endtab %}
 {% endtabs %}
-
-
-
-###  
 
