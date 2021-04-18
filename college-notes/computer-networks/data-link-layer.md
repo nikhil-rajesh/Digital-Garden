@@ -138,7 +138,34 @@ Lecture 6
   * Inform sender that error is occured, sender will resend the packet.
   * Known as ARQ \(Automatic Repeat Request\)
   * 3 types
-    * 
+    * Stop and Wait ARQ
+    * Go Back N ARQ
+    * Selective Repeat ARQ
+  * All ARQ's differ by window size and how they handle lost ack, lost frame and delayed ack
+
+{% tabs %}
+{% tab title="Stop & Wait ARQ" %}
+$$
+S.W.S = 1\\R.W.S = 1
+$$
+{% endtab %}
+
+{% tab title="Go Back N ARQ" %}
+$$
+S.W.S = 2^k - 1\\R.W.S = 1
+$$
+{% endtab %}
+
+{% tab title="Selective Repeat ARQ" %}
+$$
+S.W.S = 2^k /2\\R.W.S = 2^k/2
+$$
+
+[Why this formula?](https://stackoverflow.com/questions/3999065/why-is-window-size-less-than-or-equal-to-half-the-sequence-number-in-sr-protocol)
+{% endtab %}
+{% endtabs %}
+
+
 
 ###  
 
