@@ -174,3 +174,26 @@ $$
 Lecture 7
 {% endhint %}
 
+#### Where?
+
+❌ Centralized  
+            - Many drawbacks and not good if no.of users are more  
+✔️ Distributed
+
+#### How?
+
+* Synchronously \(Tight Coordination OR Fixed Partition\)
+  * Frequency Division Multiple Access \(FDMA\)
+  * Time Division Multiple Access \(TDMA\)
+* Asynchronously \(Dynamic Partition\)
+
+### Types
+
+* Fixed Partitioning
+  * FDMA
+  * TDMA
+* Random Access
+  * Aloha
+  * CSMA/CD
+* Reservation
+
