@@ -27,7 +27,7 @@ WLAN is wireless, BER is high. So need to acknowledge.
 WAN BER is low, but have to pass to other layers. In LAN its just forwarding, so no connection to upper layers. Therefore need to keep a active connection and verify frames.
 {% endhint %}
 
-### Functions
+### Functions of DLL
 
 * [Framing](data-link-layer.md#framing)
   * Identify boundaries of frames
@@ -35,9 +35,12 @@ WAN BER is low, but have to pass to other layers. In LAN its just forwarding, so
   * MAC addressing
 * [Error Control](data-link-layer.md#error-control)
   * Check if frame is corrupted before passing to Network Layer
-* Flow Control
+* [Flow Control](data-link-layer.md#flow-control)
   * Techniques used to control data flow when there is bandwidth differnece between sender and receiver
-* Medium Access Control
+* [Medium Access Control](data-link-layer.md#medium-access-control)
+  * Decides who is going to access the shared medium when congestion or collision occurs
+
+## Logical Link Control
 
 ### Framing
 
@@ -72,7 +75,7 @@ Lecture 3 and 4
   * **Checksum**
     * **Software Implementaion**
     * **Implemented in Transport Layer**
-* **Error Correction**
+* \*\*\*\*[**Error Correction**](data-link-layer.md#error-correction)\*\*\*\*
   * **Hamming Code**
 
 ### **Hamming Code Equation**
@@ -161,7 +164,13 @@ $$
 S.W.S = 2^k /2\\R.W.S = 2^k/2
 $$
 
-[Why this formula?](https://stackoverflow.com/questions/3999065/why-is-window-size-less-than-or-equal-to-half-the-sequence-number-in-sr-protocol)  
+[Why this formula?](https://stackoverflow.com/questions/3999065/why-is-window-size-less-than-or-equal-to-half-the-sequence-number-in-sr-protocol)
 {% endtab %}
 {% endtabs %}
+
+## Medium Access Control
+
+{% hint style="info" %}
+Lecture 7
+{% endhint %}
 
