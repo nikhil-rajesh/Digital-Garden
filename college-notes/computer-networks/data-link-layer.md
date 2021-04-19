@@ -195,7 +195,7 @@ Lecture 7
 * Random Access
   * Aloha
   * CSMA/CD
-* Reservation
+* Reservation \(Collision Free Protocols\)
   * Bitmap
   * Binary Countdown `(self study later)`
 
@@ -216,12 +216,13 @@ There are time slots. Frame can be send at the start of any time slot. Retransmi
 Since collision can only occur in current time slot, efficiency is doubled.  
 Max. Efficiency = 0.368
 
-### Carrier Sense Multiple Access \(CSMA\)
+### CSMA/CD \(Carrier Sense Multiple Access / Collision Detection\)
 
 ![](../../.gitbook/assets/screenshot_20210419_093651.png)
 
 Non-persistent is using **Exponential Backoff**. Random interval is increased after each continuous collision.  
-Checking if channel is idle before transmission is called **contention period**. 
+Checking if channel is idle before transmission is called **contention period**.   
+CSMA/CD used in wired networks like Ethernet \(Half Duplex\).
 
 {% hint style="info" %}
 10 Base T : T is length in meters
