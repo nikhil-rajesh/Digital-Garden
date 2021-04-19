@@ -197,3 +197,10 @@ Lecture 7
   * CSMA/CD
 * Reservation
 
+#### FDMA/TDMA
+
+Fixed frequency/time slots are assigned to different users on the channel. Possibility of wastage since some users might not use the alloted space. Good to use when there is less number of users.  
+Example: FM radio station
+
+#### ALOHA
+
