@@ -239,3 +239,19 @@ To avoid collision during contention period, we are using reservation based prot
 During contention period, all stations that wants to send frames will send 1 and others 0. Then during transmission period all stations that send 1 will transmit their frames sequentially.  
 This protocol is **good for high load** and not good at low loads. 
 
+### CSMA/CA \(Carrier Sense Multiple Access/Collision Avoidance\)
+
+Send control frames and check if data can be send  
+RTS - Request to send  
+CTS - Clear/Confirm to send  
+Also known as **MACA \(Multiple Access Collision Avoidance\)**  
+This protocol uses **Distributed Coordination Function.**
+
+### **MACAW**
+
+Introduced acknowledgement to CSMA/CA
+
+### Point Coordination
+
+Technique used by Access Points. There is a master-slave relationship. Master tells all slaves when and who can transmit.
+
