@@ -204,3 +204,17 @@ Example: FM radio station
 
 #### ALOHA
 
+Send the packet whenever the frames becomes available. Retransmit if collision occurs.  
+Collision might occur from previous time slot or current time slot.  
+Max. Efficiency = 0.184
+
+#### Slotted ALOHA
+
+There are time slots. Frame can be send at the start of any time slot. Retransmit if collision occured.  
+Since collision can only occur in current time slot, efficiency is doubled.  
+Max. Efficiency = 0.368
+
+#### Carrier Sense Multiple Access
+
+![](../../.gitbook/assets/screenshot_20210419_093651.png)
+
