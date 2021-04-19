@@ -196,25 +196,45 @@ Lecture 7
   * Aloha
   * CSMA/CD
 * Reservation
+  * Bitmap
+  * Binary Countdown `(self study later)`
 
-#### FDMA/TDMA
+### FDMA/TDMA
 
 Fixed frequency/time slots are assigned to different users on the channel. Possibility of wastage since some users might not use the alloted space. Good to use when there is less number of users.  
 Example: FM radio station
 
-#### ALOHA
+### ALOHA
 
 Send the packet whenever the frames becomes available. Retransmit if collision occurs.  
 Collision might occur from previous time slot or current time slot.  
 Max. Efficiency = 0.184
 
-#### Slotted ALOHA
+### Slotted ALOHA
 
 There are time slots. Frame can be send at the start of any time slot. Retransmit if collision occured.  
 Since collision can only occur in current time slot, efficiency is doubled.  
 Max. Efficiency = 0.368
 
-#### Carrier Sense Multiple Access
+### Carrier Sense Multiple Access \(CSMA\)
 
 ![](../../.gitbook/assets/screenshot_20210419_093651.png)
+
+Non-persistent is using **Exponential Backoff**. Random interval is increased after each continuous collision.  
+Checking if channel is idle before transmission is called **contention period**. 
+
+{% hint style="info" %}
+10 Base T : T is length in meters
+{% endhint %}
+
+{% hint style="info" %}
+Min frame size for T.T &gt;= 2\*P.T is 64 bytes \(100mbps connection, 512m cable\)  
+Therefore min data length = 46bytes
+{% endhint %}
+
+### Bitmap
+
+To avoid collision during contention period, we are using reservation based protocols.  
+During contention period, all stations that wants to send frames will send 1 and others 0. Then during transmission period all stations that send 1 will transmit their frames sequentially.  
+This protocol is **good for high load** and not good at low loads. 
 
