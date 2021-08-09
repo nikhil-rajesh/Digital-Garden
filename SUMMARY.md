@@ -4,21 +4,6 @@
 
 ## College Notes
 
-* [DSA](college-notes/dsa/README.md)
-  * [Sorting](college-notes/dsa/sorting/README.md)
-    * [Bubble Sort](college-notes/dsa/sorting/bubble-sort.md)
-    * [Insertion Sort](college-notes/dsa/sorting/insertion-sort.md)
-    * [Selection Sort](college-notes/dsa/sorting/selection-sort.md)
-    * [Merge Sort](college-notes/dsa/sorting/merge-sort.md)
-    * [Heap Sort](college-notes/dsa/sorting/heap-sort.md)
-    * [Quick Sort](college-notes/dsa/sorting/quick-sort.md)
-    * [Counting Sort](college-notes/dsa/sorting/counting-sort.md)
-  * [Greedy Algorithms](college-notes/dsa/greedy-algorithms.md)
-  * [Binary Search Trees](college-notes/dsa/binary-search-trees.md)
-  * [Graphs](college-notes/dsa/graphs/README.md)
-    * [Breadth First Search](college-notes/dsa/graphs/bfs.md)
-    * [Depth First Search](college-notes/dsa/graphs/dfs.md)
-  * [Hash Tables](college-notes/dsa/hash-tables.md)
 * [Compiler Design](college-notes/compiler-design/README.md)
   * [Introduction to Programming Language Translation](college-notes/compiler-design/introduction-to-programming-language-translation.md)
   * [Lexical Analysis](college-notes/compiler-design/lexical-analysis.md)
@@ -39,4 +24,12 @@
 ---
 
 * [Stock Market](stock-market.md)
+
+## S7
+
+* [Computer Vision](s7/computer-vision.md)
+* [Quantum Computation](s7/quantum-computation.md)
+* [Topics In Cryptography](s7/topics-in-cryptography.md)
+* [Machine Learning](s7/machine-learning.md)
+* [Artificial Intelligence](s7/artificial-intelligence.md)
 
