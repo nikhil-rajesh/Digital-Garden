@@ -21,6 +21,7 @@ An encryption scheme **\(Gen, Enc, Dec\)** over a message space M is perfectly i
 {% hint style="warning" %}
 Session 5 - Proving _Perfectly Secret = Perfectly Indistinguishable_  
 Session 6 - Proving _Perfectly Indistinguishable = Perfectly Secret_  
-Session 7 - 
+Session 7 - Proving _Perfectly Adverserial Indistinguishability using Perfect Indistinguishability_  
+Session 8 - 
 {% endhint %}
 
