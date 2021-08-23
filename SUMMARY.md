@@ -29,7 +29,8 @@
 
 * [Computer Vision](s7/computer-vision.md)
 * [Quantum Computation](s7/quantum-computation.md)
-* [Topics In Cryptography](s7/topics-in-cryptography.md)
+* [Topics In Cryptography](s7/topics-in-cryptography/README.md)
+  * [Perfectly Secret Encryption](s7/topics-in-cryptography/perfectly-secret-encryption.md)
 * [Machine Learning](s7/machine-learning.md)
 * [Artificial Intelligence](s7/artificial-intelligence.md)
 
