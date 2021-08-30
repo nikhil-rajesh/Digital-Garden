@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Books](books.md)
+* [Stock Market](stock-market.md)
 
 ## College Notes
 
@@ -21,10 +22,6 @@
   * [Classical Theory](college-notes/pom/classical-management.md)
 * [Computer Networks](college-notes/computer-networks/README.md)
   * [Data Link Layer](college-notes/computer-networks/data-link-layer.md)
-
----
-
-* [Stock Market](stock-market.md)
 
 ## S7
 
