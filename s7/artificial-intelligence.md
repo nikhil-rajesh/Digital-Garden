@@ -77,3 +77,7 @@ The algorithm does DFS by increasing the depth starting from 0.
 * Space Complexity - **O\(bd\)**
 * Optimal - **Yes**
 
+## Informed Search Strategies
+
+
+
