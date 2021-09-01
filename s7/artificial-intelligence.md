@@ -24,15 +24,25 @@ Time and space complexity are measured in terms of
 [https://www.javatpoint.com/ai-uninformed-search-algorithms](https://www.javatpoint.com/ai-uninformed-search-algorithms)
 {% endhint %}
 
-* Depth First Search
-* Breadth First Search 
-* Uniform Cost Search
-* Depth Limited Search
-* Iterative Deepening Search
+* [Depth First Search](artificial-intelligence.md#depth-first-search)
+* [Breadth First Search ](artificial-intelligence.md#breadth-first-search-shortest-first)
+* [Uniform Cost Search](artificial-intelligence.md#uniform-cost-search-cheapest-first)
+* [Depth Limited Search](artificial-intelligence.md#depth-limited-search)
+* [Iterative Deepening Search](artificial-intelligence.md#iterative-deepening-search)
 
 ### Depth First Search
 
 The algorithm starts at the root node \(selecting some arbitrary node as the root node in the case of a graph\) and explores as far as possible along each branch before backtracking.
+
+* Complete - **No**
+* Time Complexity - **O\(bD\)**
+  * **D** - Predetermined depth limit
+* Space Complexity - **O\(bD\)**
+* Optimal - **No**
+
+### **Depth Limited Search**
+
+A depth-limited search algorithm is similar to depth-first search with a predetermined limit. Depth-limited search can solve the drawback of the infinite path in the Depth-first search. In this algorithm, the node at the depth limit will treat as it has no successor nodes further.
 
 * Complete - **No**
 * Time Complexity - **O\(bᵐ\)**
@@ -56,5 +66,14 @@ The alogrithm visits the node that has the least cost to visit. Once visited, it
   * **C\*** - Optimal Time
   * **e** - Lowest cost
 * Space Complexity - **O\(b ^ \(C\*/e\)\)**
+* Optimal - **Yes**
+
+### Iterative Deepening Search
+
+The algorithm does DFS by increasing the depth starting from 0.
+
+* Complete - **Yes**
+* Time Complexity - **O\(bᵈ\)**
+* Space Complexity - **O\(bd\)**
 * Optimal - **Yes**
 
